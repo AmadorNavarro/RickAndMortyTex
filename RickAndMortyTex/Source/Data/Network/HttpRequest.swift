@@ -1,6 +1,6 @@
 import Foundation
 
-class HttpRequest {
+final class HttpRequest {
     
     enum Method : String {
         case get = "GET"
@@ -15,6 +15,7 @@ class HttpRequest {
     private var body: Data?
     private var printCurl = UserDefaults.standard.bool(forKey: "printCurl")
     private var printResponse = UserDefaults.standard.bool(forKey: "printLog")
+    var urlSession: IURLSession = URLSession.shared
     
     // MARK: - Initializers
     init(_ path: String) {
@@ -56,8 +57,6 @@ class HttpRequest {
         return try await prepareRequest(url)
         
     }
-    
-    
     
     // MARK: - Private methods
     private class func getQuery(_ parameters: [String : String]?) -> String {
@@ -103,7 +102,7 @@ class HttpRequest {
         
         try await withCheckedThrowingContinuation { continuation in
 
-            URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
+            urlSession.dataTask(with: request) { [weak self] (data, response, error) in
                 
                 guard let response = response as? HTTPURLResponse else {
                     continuation.resume(throwing: error ?? HttpError.unknownNetworkError)

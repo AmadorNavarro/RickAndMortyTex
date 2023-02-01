@@ -33,14 +33,8 @@ class HttpResponse {
         ok() ? self : nil
     }
     
-    // Tries to get the body of the response as an string
-    func body(_ encoding: String.Encoding = .utf8) -> String? {
-        guard let rawData = rawData else { return nil }
-        return String(data: rawData, encoding: encoding)
-    }
-    
     // Tries to get the body of the response as a Decodable object
-    func `as`<T:Decodable>(_ type: T.Type) -> T? {
+    func `as`<T: Decodable>(_ type: T.Type) -> T? {
         
         guard let rawData = rawData else { return nil }
         

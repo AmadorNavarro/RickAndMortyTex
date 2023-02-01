@@ -1,6 +1,6 @@
-enum APIConstants: String {
+enum APIConstants {
     
-    case baseURL = "https://rickandmortyapi.com/api"
-    case character = "/character"
+    static let baseURL = "https://rickandmortyapi.com/api"
+    static let character = "/character"
     
 }
