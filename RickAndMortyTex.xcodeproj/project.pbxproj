@@ -12,7 +12,18 @@
 		C290B423298979AF0010ED7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B422298979AF0010ED7C /* ViewController.swift */; };
 		C290B428298979AF0010ED7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C290B427298979AF0010ED7C /* Assets.xcassets */; };
 		C290B42B298979AF0010ED7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C290B429298979AF0010ED7C /* LaunchScreen.storyboard */; };
-		C290B436298979AF0010ED7C /* RickAndMortyTexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B435298979AF0010ED7C /* RickAndMortyTexTests.swift */; };
+		C290B45629897F740010ED7C /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = C290B45529897F740010ED7C /* Resolver */; };
+		C290B459298981BB0010ED7C /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B458298981BB0010ED7C /* HttpRequest.swift */; };
+		C290B45B298986A40010ED7C /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B45A298986A40010ED7C /* HttpError.swift */; };
+		C290B45E298987180010ED7C /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B45D298987180010ED7C /* HttpResponse.swift */; };
+		C290B46029898BF70010ED7C /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B45F29898BF70010ED7C /* RequestFactory.swift */; };
+		C290B46529898CA60010ED7C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B46429898CA60010ED7C /* APIConstants.swift */; };
+		C290B46729898EAF0010ED7C /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B46629898EAF0010ED7C /* DependencyInjection.swift */; };
+		C290B46B298991140010ED7C /* HttpResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B46A298991140010ED7C /* HttpResponseTests.swift */; };
+		C290B46D298995FA0010ED7C /* HttpRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B46C298995FA0010ED7C /* HttpRequestTests.swift */; };
+		C290B46F298996A70010ED7C /* IURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B46E298996A70010ED7C /* IURLSession.swift */; };
+		C290B472298A83400010ED7C /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B471298A83400010ED7C /* MockURLSession.swift */; };
+		C290B474298A91030010ED7C /* RequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B473298A91030010ED7C /* RequestFactoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +45,17 @@
 		C290B42A298979AF0010ED7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C290B42C298979AF0010ED7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C290B431298979AF0010ED7C /* RickAndMortyTexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyTexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C290B435298979AF0010ED7C /* RickAndMortyTexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyTexTests.swift; sourceTree = "<group>"; };
+		C290B458298981BB0010ED7C /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		C290B45A298986A40010ED7C /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		C290B45D298987180010ED7C /* HttpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		C290B45F29898BF70010ED7C /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		C290B46429898CA60010ED7C /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		C290B46629898EAF0010ED7C /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		C290B46A298991140010ED7C /* HttpResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponseTests.swift; sourceTree = "<group>"; };
+		C290B46C298995FA0010ED7C /* HttpRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestTests.swift; sourceTree = "<group>"; };
+		C290B46E298996A70010ED7C /* IURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IURLSession.swift; sourceTree = "<group>"; };
+		C290B471298A83400010ED7C /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		C290B473298A91030010ED7C /* RequestFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C290B45629897F740010ED7C /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +107,8 @@
 		C290B434298979AF0010ED7C /* RickAndMortyTexTests */ = {
 			isa = PBXGroup;
 			children = (
-				C290B435298979AF0010ED7C /* RickAndMortyTexTests.swift */,
+				C290B468298990480010ED7C /* Data */,
+				C290B470298A832B0010ED7C /* Mocks */,
 			);
 			path = RickAndMortyTexTests;
 			sourceTree = "<group>";
@@ -93,9 +116,10 @@
 		C290B44E29897BD60010ED7C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				C290B41E298979AF0010ED7C /* AppDelegate.swift */,
-				C290B420298979AF0010ED7C /* SceneDelegate.swift */,
-				C290B422298979AF0010ED7C /* ViewController.swift */,
+				C290B45029897E410010ED7C /* App */,
+				C290B45229897E630010ED7C /* Domain */,
+				C290B45129897E5A0010ED7C /* Data */,
+				C290B45329897E8E0010ED7C /* Core */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -108,6 +132,78 @@
 				C290B42C298979AF0010ED7C /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C290B45029897E410010ED7C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C290B420298979AF0010ED7C /* SceneDelegate.swift */,
+				C290B41E298979AF0010ED7C /* AppDelegate.swift */,
+				C290B422298979AF0010ED7C /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C290B45129897E5A0010ED7C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C290B457298981080010ED7C /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C290B45229897E630010ED7C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C290B45329897E8E0010ED7C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C290B46629898EAF0010ED7C /* DependencyInjection.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C290B457298981080010ED7C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C290B46E298996A70010ED7C /* IURLSession.swift */,
+				C290B46429898CA60010ED7C /* APIConstants.swift */,
+				C290B45A298986A40010ED7C /* HttpError.swift */,
+				C290B458298981BB0010ED7C /* HttpRequest.swift */,
+				C290B45D298987180010ED7C /* HttpResponse.swift */,
+				C290B45F29898BF70010ED7C /* RequestFactory.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C290B468298990480010ED7C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C290B4692989905D0010ED7C /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C290B4692989905D0010ED7C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C290B46A298991140010ED7C /* HttpResponseTests.swift */,
+				C290B46C298995FA0010ED7C /* HttpRequestTests.swift */,
+				C290B473298A91030010ED7C /* RequestFactoryTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C290B470298A832B0010ED7C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C290B471298A83400010ED7C /* MockURLSession.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +222,9 @@
 			dependencies = (
 			);
 			name = RickAndMortyTex;
+			packageProductDependencies = (
+				C290B45529897F740010ED7C /* Resolver */,
+			);
 			productName = RickAndMortyTex;
 			productReference = C290B41B298979AF0010ED7C /* RickAndMortyTex.app */;
 			productType = "com.apple.product-type.application";
@@ -176,6 +275,9 @@
 				Base,
 			);
 			mainGroup = C290B412298979AF0010ED7C;
+			packageReferences = (
+				C290B45429897F740010ED7C /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = C290B41C298979AF0010ED7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,8 +312,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C290B45E298987180010ED7C /* HttpResponse.swift in Sources */,
 				C290B423298979AF0010ED7C /* ViewController.swift in Sources */,
+				C290B459298981BB0010ED7C /* HttpRequest.swift in Sources */,
+				C290B46029898BF70010ED7C /* RequestFactory.swift in Sources */,
+				C290B46529898CA60010ED7C /* APIConstants.swift in Sources */,
+				C290B46729898EAF0010ED7C /* DependencyInjection.swift in Sources */,
+				C290B45B298986A40010ED7C /* HttpError.swift in Sources */,
 				C290B41F298979AF0010ED7C /* AppDelegate.swift in Sources */,
+				C290B46F298996A70010ED7C /* IURLSession.swift in Sources */,
 				C290B421298979AF0010ED7C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C290B436298979AF0010ED7C /* RickAndMortyTexTests.swift in Sources */,
+				C290B474298A91030010ED7C /* RequestFactoryTests.swift in Sources */,
+				C290B472298A83400010ED7C /* MockURLSession.swift in Sources */,
+				C290B46B298991140010ED7C /* HttpResponseTests.swift in Sources */,
+				C290B46D298995FA0010ED7C /* HttpRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +603,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C290B45429897F740010ED7C /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver";
+			requirement = {
+				kind = exactVersion;
+				version = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C290B45529897F740010ED7C /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C290B45429897F740010ED7C /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C290B413298979AF0010ED7C /* Project object */;
 }
