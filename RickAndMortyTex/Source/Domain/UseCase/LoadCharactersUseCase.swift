@@ -6,7 +6,7 @@ final class LoadCharactersUseCase: ILoadCharactersUseCase {
         self.repository = repository
     }
     
-    func execute(_ page: Int) async throws -> ([Character], Bool) {
+    func execute(page: Int) async throws -> ([Character], Bool) {
         try await repository.getCharacters(page: page)
     }
     

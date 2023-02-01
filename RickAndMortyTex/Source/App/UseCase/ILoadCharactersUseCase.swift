@@ -1,5 +1,5 @@
 protocol ILoadCharactersUseCase {
     
-    func execute(_ page: Int) async throws -> ([Character], Bool)
+    func execute(page: Int) async throws -> ([Character], Bool)
     
 }

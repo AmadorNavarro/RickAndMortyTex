@@ -34,6 +34,10 @@
 		C2A8AC59298AC57D0068028C /* MockRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC58298AC57D0068028C /* MockRequestFactory.swift */; };
 		C2A8AC5C298ACEA00068028C /* ILoadCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC5B298ACEA00068028C /* ILoadCharactersUseCase.swift */; };
 		C2A8AC5F298ACEF20068028C /* LoadCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC5E298ACEF20068028C /* LoadCharactersUseCase.swift */; };
+		C2A8AC63298AD0E00068028C /* LoadCharactersUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC62298AD0E00068028C /* LoadCharactersUseCaseTests.swift */; };
+		C2A8AC65298AD12C0068028C /* MockCharactersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC64298AD12C0068028C /* MockCharactersRepository.swift */; };
+		C2A8AC69298AD5770068028C /* CharacterList.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A8AC68298AD5770068028C /* CharacterList.json */; };
+		C2A8AC6B298AD6350068028C /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC6A298AD6350068028C /* FileLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,10 @@
 		C2A8AC58298AC57D0068028C /* MockRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestFactory.swift; sourceTree = "<group>"; };
 		C2A8AC5B298ACEA00068028C /* ILoadCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoadCharactersUseCase.swift; sourceTree = "<group>"; };
 		C2A8AC5E298ACEF20068028C /* LoadCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCharactersUseCase.swift; sourceTree = "<group>"; };
+		C2A8AC62298AD0E00068028C /* LoadCharactersUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCharactersUseCaseTests.swift; sourceTree = "<group>"; };
+		C2A8AC64298AD12C0068028C /* MockCharactersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharactersRepository.swift; sourceTree = "<group>"; };
+		C2A8AC68298AD5770068028C /* CharacterList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CharacterList.json; sourceTree = "<group>"; };
+		C2A8AC6A298AD6350068028C /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +135,11 @@
 		C290B434298979AF0010ED7C /* RickAndMortyTexTests */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8AC60298AD08F0068028C /* Domain */,
 				C290B468298990480010ED7C /* Data */,
+				C2A8AC66298AD4EF0068028C /* Helpers */,
 				C290B470298A832B0010ED7C /* Mocks */,
+				C2A8AC67298AD5370068028C /* Files */,
 			);
 			path = RickAndMortyTexTests;
 			sourceTree = "<group>";
@@ -229,6 +240,7 @@
 			children = (
 				C290B471298A83400010ED7C /* MockURLSession.swift */,
 				C2A8AC58298AC57D0068028C /* MockRequestFactory.swift */,
+				C2A8AC64298AD12C0068028C /* MockCharactersRepository.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -298,6 +310,38 @@
 				C2A8AC5E298ACEF20068028C /* LoadCharactersUseCase.swift */,
 			);
 			path = UseCase;
+			sourceTree = "<group>";
+		};
+		C2A8AC60298AD08F0068028C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C2A8AC61298AD0C80068028C /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C2A8AC61298AD0C80068028C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				C2A8AC62298AD0E00068028C /* LoadCharactersUseCaseTests.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		C2A8AC66298AD4EF0068028C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C2A8AC6A298AD6350068028C /* FileLoader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C2A8AC67298AD5370068028C /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2A8AC68298AD5770068028C /* CharacterList.json */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A8AC69298AD5770068028C /* CharacterList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,9 +479,12 @@
 				C290B474298A91030010ED7C /* RequestFactoryTests.swift in Sources */,
 				C290B472298A83400010ED7C /* MockURLSession.swift in Sources */,
 				C290B46B298991140010ED7C /* HttpResponseTests.swift in Sources */,
+				C2A8AC65298AD12C0068028C /* MockCharactersRepository.swift in Sources */,
 				C290B46D298995FA0010ED7C /* HttpRequestTests.swift in Sources */,
 				C2A8AC59298AC57D0068028C /* MockRequestFactory.swift in Sources */,
+				C2A8AC6B298AD6350068028C /* FileLoader.swift in Sources */,
 				C2A8AC57298AC4A70068028C /* CharactersRepositoryTests.swift in Sources */,
+				C2A8AC63298AD0E00068028C /* LoadCharactersUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
