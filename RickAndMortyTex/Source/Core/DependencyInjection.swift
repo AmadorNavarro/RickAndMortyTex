@@ -6,6 +6,9 @@ extension Resolver: ResolverRegistering {
         
         Resolver.defaultScope = .application
         
+        // Domain
+        main.register { LoadCharactersUseCase(resolve()) as ILoadCharactersUseCase }
+        
         // Data
         main.register { RequestFactory() as IRequestFactory }
         main.register { CharactersRepository(resolve()) as ICharactersRepository }

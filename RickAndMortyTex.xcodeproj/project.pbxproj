@@ -32,6 +32,8 @@
 		C290B489298AB3BF0010ED7C /* IRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B488298AB3BF0010ED7C /* IRequestFactory.swift */; };
 		C2A8AC57298AC4A70068028C /* CharactersRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC56298AC4A70068028C /* CharactersRepositoryTests.swift */; };
 		C2A8AC59298AC57D0068028C /* MockRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC58298AC57D0068028C /* MockRequestFactory.swift */; };
+		C2A8AC5C298ACEA00068028C /* ILoadCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC5B298ACEA00068028C /* ILoadCharactersUseCase.swift */; };
+		C2A8AC5F298ACEF20068028C /* LoadCharactersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC5E298ACEF20068028C /* LoadCharactersUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		C290B488298AB3BF0010ED7C /* IRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequestFactory.swift; sourceTree = "<group>"; };
 		C2A8AC56298AC4A70068028C /* CharactersRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRepositoryTests.swift; sourceTree = "<group>"; };
 		C2A8AC58298AC57D0068028C /* MockRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestFactory.swift; sourceTree = "<group>"; };
+		C2A8AC5B298ACEA00068028C /* ILoadCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoadCharactersUseCase.swift; sourceTree = "<group>"; };
+		C2A8AC5E298ACEF20068028C /* LoadCharactersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCharactersUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 		C290B45029897E410010ED7C /* App */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8AC5A298ACE610068028C /* UseCase */,
 				C290B420298979AF0010ED7C /* SceneDelegate.swift */,
 				C290B41E298979AF0010ED7C /* AppDelegate.swift */,
 				C290B422298979AF0010ED7C /* ViewController.swift */,
@@ -172,6 +177,7 @@
 		C290B45229897E630010ED7C /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8AC5D298ACEDC0068028C /* UseCase */,
 				C290B47D298A97740010ED7C /* Model */,
 				C290B478298A96170010ED7C /* Repository */,
 			);
@@ -276,6 +282,22 @@
 				C2A8AC56298AC4A70068028C /* CharactersRepositoryTests.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		C2A8AC5A298ACE610068028C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				C2A8AC5B298ACEA00068028C /* ILoadCharactersUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		C2A8AC5D298ACEDC0068028C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				C2A8AC5E298ACEF20068028C /* LoadCharactersUseCase.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C290B483298A9D060010ED7C /* CharactersReponse.swift in Sources */,
+				C2A8AC5F298ACEF20068028C /* LoadCharactersUseCase.swift in Sources */,
 				C290B47F298A97810010ED7C /* Character.swift in Sources */,
 				C290B45E298987180010ED7C /* HttpResponse.swift in Sources */,
 				C290B487298AB2110010ED7C /* IHttpRequest.swift in Sources */,
@@ -394,6 +417,7 @@
 				C290B46029898BF70010ED7C /* RequestFactory.swift in Sources */,
 				C290B47A298A96330010ED7C /* ICharactersRepository.swift in Sources */,
 				C290B46529898CA60010ED7C /* APIConstants.swift in Sources */,
+				C2A8AC5C298ACEA00068028C /* ILoadCharactersUseCase.swift in Sources */,
 				C290B489298AB3BF0010ED7C /* IRequestFactory.swift in Sources */,
 				C290B46729898EAF0010ED7C /* DependencyInjection.swift in Sources */,
 				C290B45B298986A40010ED7C /* HttpError.swift in Sources */,
