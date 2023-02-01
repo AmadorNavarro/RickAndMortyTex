@@ -1,12 +1,12 @@
 protocol IRequestFactory {
     
-    func create(path: String, parameters: [String : String]?) -> HttpRequest
+    func create(path: String, parameters: [String : String]?) -> IHttpRequest
     
 }
 
 extension IRequestFactory {
     
-    func create(path: String, parameters: [String : String]? = nil) -> HttpRequest {
+    func create(path: String, parameters: [String : String]? = nil) -> IHttpRequest {
         create(path: path, parameters: parameters)
     }
     
