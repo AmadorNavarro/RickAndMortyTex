@@ -5,6 +5,7 @@ final class CharacterListView: UIViewController, BindableView {
     // MARK: Private members
     private(set) lazy var ui = { Ui(self.view) }()
     private let output: CharacterListInput
+    private var characters: [Character] = []
     
     // MARK: Initializer
     init(input: CharacterListModel, output: CharacterListInput) {
@@ -20,6 +21,11 @@ final class CharacterListView: UIViewController, BindableView {
     
     // MARK: Public interface
     func bindInput(_ input: CharacterListModel) {
+        
+        sink(input.$characters) { [weak self] characters in
+            self?.characters = characters
+            self?.ui.collectionView.reloadData()
+        }
         
     }
     

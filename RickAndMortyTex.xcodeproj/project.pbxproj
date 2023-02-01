@@ -47,6 +47,15 @@
 		C2A8AC7D298ADBB10068028C /* BindableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC7C298ADBB10068028C /* BindableView.swift */; };
 		C2A8AC80298ADD210068028C /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC7F298ADD210068028C /* UIView+Additions.swift */; };
 		C2A8AC83298ADDCF0068028C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C2A8AC82298ADDCF0068028C /* SnapKit */; };
+		C2A8AC87298AE0080068028C /* CharacterCell+Ui.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC85298AE0080068028C /* CharacterCell+Ui.swift */; };
+		C2A8AC88298AE0080068028C /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC86298AE0080068028C /* CharacterCell.swift */; };
+		C2A8AC8A298AE1ED0068028C /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC89298AE1ED0068028C /* UIColor+Additions.swift */; };
+		C2A8AC8D298AE3E20068028C /* UIFont+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC8C298AE3E20068028C /* UIFont+Additions.swift */; };
+		C2A8AC92298AE5390068028C /* get_schwifty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2A8AC91298AE5320068028C /* get_schwifty.ttf */; };
+		C2A8AC94298AE5750068028C /* NotoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2A8AC93298AE5750068028C /* NotoSans-Black.ttf */; };
+		C2A8AC97298AE6EA0068028C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C2A8AC96298AE6EA0068028C /* Kingfisher */; };
+		C2A8AC99298AE9110068028C /* RAMImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC98298AE9110068028C /* RAMImages.swift */; };
+		C2A8AC9B298AEA110068028C /* UIImageView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC9A298AEA110068028C /* UIImageView+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +110,14 @@
 		C2A8AC73298ADB3B0068028C /* CharacterListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListModel.swift; sourceTree = "<group>"; };
 		C2A8AC7C298ADBB10068028C /* BindableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableView.swift; sourceTree = "<group>"; };
 		C2A8AC7F298ADD210068028C /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		C2A8AC85298AE0080068028C /* CharacterCell+Ui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterCell+Ui.swift"; sourceTree = "<group>"; };
+		C2A8AC86298AE0080068028C /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		C2A8AC89298AE1ED0068028C /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		C2A8AC8C298AE3E20068028C /* UIFont+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Additions.swift"; sourceTree = "<group>"; };
+		C2A8AC91298AE5320068028C /* get_schwifty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = get_schwifty.ttf; sourceTree = "<group>"; };
+		C2A8AC93298AE5750068028C /* NotoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Black.ttf"; sourceTree = "<group>"; };
+		C2A8AC98298AE9110068028C /* RAMImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMImages.swift; sourceTree = "<group>"; };
+		C2A8AC9A298AEA110068028C /* UIImageView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A8AC97298AE6EA0068028C /* Kingfisher in Frameworks */,
 				C290B45629897F740010ED7C /* Resolver in Frameworks */,
 				C2A8AC83298ADDCF0068028C /* SnapKit in Frameworks */,
 			);
@@ -176,6 +194,7 @@
 		C290B44F29897BE80010ED7C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8AC8E298AE4CC0068028C /* Fonts */,
 				C290B427298979AF0010ED7C /* Assets.xcassets */,
 				C290B429298979AF0010ED7C /* LaunchScreen.storyboard */,
 				C290B42C298979AF0010ED7C /* Info.plist */,
@@ -368,6 +387,7 @@
 		C2A8AC6D298ADB130068028C /* CharacterList */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8AC84298ADFF40068028C /* Cells */,
 				C2A8AC6E298ADB3B0068028C /* CharacterListInput.swift */,
 				C2A8AC73298ADB3B0068028C /* CharacterListModel.swift */,
 				C2A8AC70298ADB3B0068028C /* CharacterListController.swift */,
@@ -390,6 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				C2A8AC7C298ADBB10068028C /* BindableView.swift */,
+				C2A8AC98298AE9110068028C /* RAMImages.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -398,8 +419,29 @@
 			isa = PBXGroup;
 			children = (
 				C2A8AC7F298ADD210068028C /* UIView+Additions.swift */,
+				C2A8AC89298AE1ED0068028C /* UIColor+Additions.swift */,
+				C2A8AC8C298AE3E20068028C /* UIFont+Additions.swift */,
+				C2A8AC9A298AEA110068028C /* UIImageView+Additions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C2A8AC84298ADFF40068028C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C2A8AC86298AE0080068028C /* CharacterCell.swift */,
+				C2A8AC85298AE0080068028C /* CharacterCell+Ui.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C2A8AC8E298AE4CC0068028C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C2A8AC93298AE5750068028C /* NotoSans-Black.ttf */,
+				C2A8AC91298AE5320068028C /* get_schwifty.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +463,7 @@
 			packageProductDependencies = (
 				C290B45529897F740010ED7C /* Resolver */,
 				C2A8AC82298ADDCF0068028C /* SnapKit */,
+				C2A8AC96298AE6EA0068028C /* Kingfisher */,
 			);
 			productName = RickAndMortyTex;
 			productReference = C290B41B298979AF0010ED7C /* RickAndMortyTex.app */;
@@ -475,6 +518,7 @@
 			packageReferences = (
 				C290B45429897F740010ED7C /* XCRemoteSwiftPackageReference "Resolver" */,
 				C2A8AC81298ADDCF0068028C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C2A8AC95298AE6E90068028C /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = C290B41C298979AF0010ED7C /* Products */;
 			projectDirPath = "";
@@ -492,6 +536,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C290B42B298979AF0010ED7C /* LaunchScreen.storyboard in Resources */,
+				C2A8AC94298AE5750068028C /* NotoSans-Black.ttf in Resources */,
+				C2A8AC92298AE5390068028C /* get_schwifty.ttf in Resources */,
 				C290B428298979AF0010ED7C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +560,7 @@
 				C2A8AC76298ADB3B0068028C /* CharacterListController.swift in Sources */,
 				C290B483298A9D060010ED7C /* CharactersReponse.swift in Sources */,
 				C2A8AC5F298ACEF20068028C /* LoadCharactersUseCase.swift in Sources */,
+				C2A8AC88298AE0080068028C /* CharacterCell.swift in Sources */,
 				C290B47F298A97810010ED7C /* Character.swift in Sources */,
 				C290B45E298987180010ED7C /* HttpResponse.swift in Sources */,
 				C290B487298AB2110010ED7C /* IHttpRequest.swift in Sources */,
@@ -523,17 +570,22 @@
 				C290B46029898BF70010ED7C /* RequestFactory.swift in Sources */,
 				C2A8AC7D298ADBB10068028C /* BindableView.swift in Sources */,
 				C2A8AC75298ADB3B0068028C /* CharacterListView+Factory.swift in Sources */,
+				C2A8AC87298AE0080068028C /* CharacterCell+Ui.swift in Sources */,
 				C290B47A298A96330010ED7C /* ICharactersRepository.swift in Sources */,
 				C290B46529898CA60010ED7C /* APIConstants.swift in Sources */,
+				C2A8AC99298AE9110068028C /* RAMImages.swift in Sources */,
+				C2A8AC8D298AE3E20068028C /* UIFont+Additions.swift in Sources */,
 				C2A8AC5C298ACEA00068028C /* ILoadCharactersUseCase.swift in Sources */,
 				C290B489298AB3BF0010ED7C /* IRequestFactory.swift in Sources */,
 				C290B46729898EAF0010ED7C /* DependencyInjection.swift in Sources */,
 				C290B45B298986A40010ED7C /* HttpError.swift in Sources */,
+				C2A8AC8A298AE1ED0068028C /* UIColor+Additions.swift in Sources */,
 				C2A8AC78298ADB3B0068028C /* CharacterListView.swift in Sources */,
 				C290B41F298979AF0010ED7C /* AppDelegate.swift in Sources */,
 				C290B46F298996A70010ED7C /* IURLSession.swift in Sources */,
 				C290B421298979AF0010ED7C /* SceneDelegate.swift in Sources */,
 				C2A8AC79298ADB3B0068028C /* CharacterListModel.swift in Sources */,
+				C2A8AC9B298AEA110068028C /* UIImageView+Additions.swift in Sources */,
 				C2A8AC77298ADB3B0068028C /* CharacterListView+UI.swift in Sources */,
 				C2A8AC80298ADD210068028C /* UIView+Additions.swift in Sources */,
 				C2A8AC74298ADB3B0068028C /* CharacterListInput.swift in Sources */,
@@ -841,6 +893,14 @@
 				version = 5.6.0;
 			};
 		};
+		C2A8AC95298AE6E90068028C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = exactVersion;
+				version = 7.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -853,6 +913,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C2A8AC81298ADDCF0068028C /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		C2A8AC96298AE6EA0068028C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2A8AC95298AE6E90068028C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

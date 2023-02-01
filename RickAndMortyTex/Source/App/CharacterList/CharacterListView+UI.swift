@@ -1,6 +1,6 @@
 import UIKit
 
-private let collectionCellSize = CGSize(width: 198, height: 264)
+private let collectionCellSize = CGSize(width: 200, height: 250)
 
 extension CharacterListView { final class Ui {
     
@@ -8,7 +8,10 @@ extension CharacterListView { final class Ui {
         
     init(_ superview: UIView) {
         
-        
+        superview.configure(collectionView) {
+            $0.backgroundColor = .white
+            $1.edges.equalToSuperview()
+        }
         
     }
         
@@ -20,8 +23,7 @@ extension CharacterListView { final class Ui {
         layout.scrollDirection = .horizontal
         layout.itemSize = collectionCellSize
         
-        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        return view
+        return UICollectionView(frame: .zero, collectionViewLayout: layout)
         
     }
     
