@@ -198,6 +198,7 @@
 		C290B468298990480010ED7C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8AC53298AC3B00068028C /* Repository */,
 				C290B4692989905D0010ED7C /* Network */,
 			);
 			path = Data;
@@ -262,6 +263,13 @@
 				C290B488298AB3BF0010ED7C /* IRequestFactory.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C2A8AC53298AC3B00068028C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
