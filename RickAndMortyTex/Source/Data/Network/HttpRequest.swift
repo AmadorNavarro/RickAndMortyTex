@@ -1,6 +1,6 @@
 import Foundation
 
-final class HttpRequest {
+final class HttpRequest: IHttpRequest {
     
     enum Method : String {
         case get = "GET"

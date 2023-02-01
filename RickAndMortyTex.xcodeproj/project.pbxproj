@@ -24,6 +24,14 @@
 		C290B46F298996A70010ED7C /* IURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B46E298996A70010ED7C /* IURLSession.swift */; };
 		C290B472298A83400010ED7C /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B471298A83400010ED7C /* MockURLSession.swift */; };
 		C290B474298A91030010ED7C /* RequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B473298A91030010ED7C /* RequestFactoryTests.swift */; };
+		C290B47A298A96330010ED7C /* ICharactersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B479298A96330010ED7C /* ICharactersRepository.swift */; };
+		C290B47C298A97060010ED7C /* CharactersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B47B298A97060010ED7C /* CharactersRepository.swift */; };
+		C290B47F298A97810010ED7C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B47E298A97810010ED7C /* Character.swift */; };
+		C290B483298A9D060010ED7C /* CharactersReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B482298A9D060010ED7C /* CharactersReponse.swift */; };
+		C290B487298AB2110010ED7C /* IHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B486298AB2110010ED7C /* IHttpRequest.swift */; };
+		C290B489298AB3BF0010ED7C /* IRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B488298AB3BF0010ED7C /* IRequestFactory.swift */; };
+		C2A8AC57298AC4A70068028C /* CharactersRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC56298AC4A70068028C /* CharactersRepositoryTests.swift */; };
+		C2A8AC59298AC57D0068028C /* MockRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8AC58298AC57D0068028C /* MockRequestFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +64,14 @@
 		C290B46E298996A70010ED7C /* IURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IURLSession.swift; sourceTree = "<group>"; };
 		C290B471298A83400010ED7C /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		C290B473298A91030010ED7C /* RequestFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactoryTests.swift; sourceTree = "<group>"; };
+		C290B479298A96330010ED7C /* ICharactersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICharactersRepository.swift; sourceTree = "<group>"; };
+		C290B47B298A97060010ED7C /* CharactersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRepository.swift; sourceTree = "<group>"; };
+		C290B47E298A97810010ED7C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		C290B482298A9D060010ED7C /* CharactersReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersReponse.swift; sourceTree = "<group>"; };
+		C290B486298AB2110010ED7C /* IHttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHttpRequest.swift; sourceTree = "<group>"; };
+		C290B488298AB3BF0010ED7C /* IRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequestFactory.swift; sourceTree = "<group>"; };
+		C2A8AC56298AC4A70068028C /* CharactersRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRepositoryTests.swift; sourceTree = "<group>"; };
+		C2A8AC58298AC57D0068028C /* MockRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequestFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +163,7 @@
 		C290B45129897E5A0010ED7C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C290B477298A960C0010ED7C /* Repository */,
 				C290B457298981080010ED7C /* Network */,
 			);
 			path = Data;
@@ -155,6 +172,8 @@
 		C290B45229897E630010ED7C /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C290B47D298A97740010ED7C /* Model */,
+				C290B478298A96170010ED7C /* Repository */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -170,7 +189,7 @@
 		C290B457298981080010ED7C /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C290B46E298996A70010ED7C /* IURLSession.swift */,
+				C290B48A298AB3E60010ED7C /* Protocols */,
 				C290B46429898CA60010ED7C /* APIConstants.swift */,
 				C290B45A298986A40010ED7C /* HttpError.swift */,
 				C290B458298981BB0010ED7C /* HttpRequest.swift */,
@@ -183,6 +202,7 @@
 		C290B468298990480010ED7C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8AC53298AC3B00068028C /* Repository */,
 				C290B4692989905D0010ED7C /* Network */,
 			);
 			path = Data;
@@ -202,8 +222,60 @@
 			isa = PBXGroup;
 			children = (
 				C290B471298A83400010ED7C /* MockURLSession.swift */,
+				C2A8AC58298AC57D0068028C /* MockRequestFactory.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C290B477298A960C0010ED7C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C290B47B298A97060010ED7C /* CharactersRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C290B478298A96170010ED7C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C290B479298A96330010ED7C /* ICharactersRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C290B47D298A97740010ED7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C290B481298A9CE30010ED7C /* Response */,
+				C290B47E298A97810010ED7C /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C290B481298A9CE30010ED7C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				C290B482298A9D060010ED7C /* CharactersReponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		C290B48A298AB3E60010ED7C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C290B46E298996A70010ED7C /* IURLSession.swift */,
+				C290B486298AB2110010ED7C /* IHttpRequest.swift */,
+				C290B488298AB3BF0010ED7C /* IRequestFactory.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C2A8AC53298AC3B00068028C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C2A8AC56298AC4A70068028C /* CharactersRepositoryTests.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,11 +384,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C290B483298A9D060010ED7C /* CharactersReponse.swift in Sources */,
+				C290B47F298A97810010ED7C /* Character.swift in Sources */,
 				C290B45E298987180010ED7C /* HttpResponse.swift in Sources */,
+				C290B487298AB2110010ED7C /* IHttpRequest.swift in Sources */,
+				C290B47C298A97060010ED7C /* CharactersRepository.swift in Sources */,
 				C290B423298979AF0010ED7C /* ViewController.swift in Sources */,
 				C290B459298981BB0010ED7C /* HttpRequest.swift in Sources */,
 				C290B46029898BF70010ED7C /* RequestFactory.swift in Sources */,
+				C290B47A298A96330010ED7C /* ICharactersRepository.swift in Sources */,
 				C290B46529898CA60010ED7C /* APIConstants.swift in Sources */,
+				C290B489298AB3BF0010ED7C /* IRequestFactory.swift in Sources */,
 				C290B46729898EAF0010ED7C /* DependencyInjection.swift in Sources */,
 				C290B45B298986A40010ED7C /* HttpError.swift in Sources */,
 				C290B41F298979AF0010ED7C /* AppDelegate.swift in Sources */,
@@ -333,6 +411,8 @@
 				C290B472298A83400010ED7C /* MockURLSession.swift in Sources */,
 				C290B46B298991140010ED7C /* HttpResponseTests.swift in Sources */,
 				C290B46D298995FA0010ED7C /* HttpRequestTests.swift in Sources */,
+				C2A8AC59298AC57D0068028C /* MockRequestFactory.swift in Sources */,
+				C2A8AC57298AC4A70068028C /* CharactersRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

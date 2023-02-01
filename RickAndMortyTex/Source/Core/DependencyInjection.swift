@@ -7,7 +7,8 @@ extension Resolver: ResolverRegistering {
         Resolver.defaultScope = .application
         
         // Data
-        main.register { RequestFactory() }
+        main.register { RequestFactory() as IRequestFactory }
+        main.register { CharactersRepository(resolve()) as ICharactersRepository }
         
     }
     
