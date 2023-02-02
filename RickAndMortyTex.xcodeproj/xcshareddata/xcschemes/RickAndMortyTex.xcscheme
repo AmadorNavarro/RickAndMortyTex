@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C290B41A298979AF0010ED7C"
-               BuildableName = "RickAndMortyTex.app"
+               BuildableName = "Rick&amp;Morty.app"
                BlueprintName = "RickAndMortyTex"
                ReferencedContainer = "container:RickAndMortyTex.xcodeproj">
             </BuildableReference>
@@ -55,7 +55,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C290B41A298979AF0010ED7C"
-            BuildableName = "RickAndMortyTex.app"
+            BuildableName = "Rick&amp;Morty.app"
             BlueprintName = "RickAndMortyTex"
             ReferencedContainer = "container:RickAndMortyTex.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C290B41A298979AF0010ED7C"
-            BuildableName = "RickAndMortyTex.app"
+            BuildableName = "Rick&amp;Morty.app"
             BlueprintName = "RickAndMortyTex"
             ReferencedContainer = "container:RickAndMortyTex.xcodeproj">
          </BuildableReference>
