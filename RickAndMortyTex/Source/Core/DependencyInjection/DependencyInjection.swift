@@ -6,6 +6,9 @@ extension Resolver: ResolverRegistering {
         
         Resolver.defaultScope = .application
         
+        // App
+        main.register { AppNavigator() as IAppNavigator }
+        
         // Domain
         main.register { LoadCharactersUseCase(resolve()) as ILoadCharactersUseCase }
         

@@ -25,10 +25,6 @@ final class CharacterListView: UIViewController, BindableView {
         title = "Rick and Morty"
     }
 
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//        .lightContent
-//    }
-    
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         ui.collectionView.dataSource = self
@@ -116,5 +112,10 @@ extension CharacterListView: UICollectionViewDataSource {
 }
 
 extension CharacterListView: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let character = characters[indexPath.item]
+        output.onCharacterSelected(character)
+    }
     
 }
