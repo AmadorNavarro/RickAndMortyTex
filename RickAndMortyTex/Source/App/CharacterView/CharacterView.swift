@@ -19,6 +19,10 @@ final class CharacterView: UIViewController, BindableView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewDidLoad() {
+        title = "Rick and Morty"
+    }
+    
     // MARK: Public interface
     func bindInput(_ input: CharacterModel) {
         

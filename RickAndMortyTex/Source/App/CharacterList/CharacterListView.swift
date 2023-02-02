@@ -23,6 +23,7 @@ final class CharacterListView: UIViewController, BindableView {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Rick and Morty"
+        navigationItem.backButtonTitle = ""
     }
 
     public override func viewWillAppear(_ animated: Bool) {
