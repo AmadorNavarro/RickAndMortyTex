@@ -147,6 +147,43 @@ final class CharacterListViewTests: XCTestCase {
         
     }
     
+    // MARK: - Collection View Data Source
+    func test_numberOfItems_shouldBe20() {
+        
+        sut.viewWillAppear(false)
+        model.characters = characters()
+        assertCharactersValue()
+        waitForExpectations(timeout: 1)
+        
+        XCTAssertEqual(itemsInSection(in: sut.ui.collectionView, section: 0), 20)
+        
+    }
+    
+    func test_cellForItem_shouldReturnCell() {
+        
+        sut.viewWillAppear(false)
+        model.characters = characters()
+        assertCharactersValue()
+        waitForExpectations(timeout: 1)
+        
+        let cell = cellForItem(in: sut.ui.collectionView, item: 0)
+        XCTAssertNotNil(cell as? CharacterCell)
+        
+    }
+    
+    // MARK: - Collection View Delegate
+    func test_didSelectItemAt_shouldNavigateToCharacterView() {
+        
+        sut.viewWillAppear(false)
+        model.characters = characters()
+        assertCharactersValue()
+        waitForExpectations(timeout: 1)
+        
+        didSelectedItem(in: sut.ui.collectionView, item: 1)
+        XCTAssertEqual(controller.characterSelected?.id, 2)
+        
+    }
+    
     // MARK: - Helpers
     func characters() -> [Character] {
         

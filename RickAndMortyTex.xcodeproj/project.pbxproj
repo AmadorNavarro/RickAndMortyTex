@@ -22,6 +22,7 @@
 		C27E490F298C1D0B009CBD53 /* CharacterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E490A298C1D0B009CBD53 /* CharacterViewTests.swift */; };
 		C27E4912298C1D0B009CBD53 /* CharacterView+UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E490D298C1D0B009CBD53 /* CharacterView+UITests.swift */; };
 		C27E4915298C2191009CBD53 /* MockAppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E4914298C2191009CBD53 /* MockAppNavigator.swift */; };
+		C27E4917298C2A96009CBD53 /* CollectionViewDataSourceDelegateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E4916298C2A96009CBD53 /* CollectionViewDataSourceDelegateHelper.swift */; };
 		C290B41F298979AF0010ED7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B41E298979AF0010ED7C /* AppDelegate.swift */; };
 		C290B421298979AF0010ED7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B420298979AF0010ED7C /* SceneDelegate.swift */; };
 		C290B428298979AF0010ED7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C290B427298979AF0010ED7C /* Assets.xcassets */; };
@@ -117,6 +118,7 @@
 		C27E490D298C1D0B009CBD53 /* CharacterView+UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterView+UITests.swift"; sourceTree = "<group>"; };
 		C27E4913298C1E9F009CBD53 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C27E4914298C2191009CBD53 /* MockAppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppNavigator.swift; sourceTree = "<group>"; };
+		C27E4916298C2A96009CBD53 /* CollectionViewDataSourceDelegateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSourceDelegateHelper.swift; sourceTree = "<group>"; };
 		C290B41B298979AF0010ED7C /* RickAndMortyTex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyTex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C290B41E298979AF0010ED7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C290B420298979AF0010ED7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -481,6 +483,7 @@
 				C2A8AC6A298AD6350068028C /* FileLoader.swift */,
 				C27E48EB298BD90B009CBD53 /* XCTestCase+Additions.swift */,
 				C27E48ED298BDF82009CBD53 /* Helpers.swift */,
+				C27E4916298C2A96009CBD53 /* CollectionViewDataSourceDelegateHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -804,6 +807,7 @@
 			files = (
 				C290B474298A91030010ED7C /* RequestFactoryTests.swift in Sources */,
 				C290B472298A83400010ED7C /* MockURLSession.swift in Sources */,
+				C27E4917298C2A96009CBD53 /* CollectionViewDataSourceDelegateHelper.swift in Sources */,
 				C290B46B298991140010ED7C /* HttpResponseTests.swift in Sources */,
 				C2A8AC65298AD12C0068028C /* MockCharactersRepository.swift in Sources */,
 				C27E48EC298BD90B009CBD53 /* XCTestCase+Additions.swift in Sources */,
