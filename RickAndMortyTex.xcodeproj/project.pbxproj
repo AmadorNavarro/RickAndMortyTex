@@ -119,7 +119,7 @@
 		C27E4913298C1E9F009CBD53 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C27E4914298C2191009CBD53 /* MockAppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppNavigator.swift; sourceTree = "<group>"; };
 		C27E4916298C2A96009CBD53 /* CollectionViewDataSourceDelegateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSourceDelegateHelper.swift; sourceTree = "<group>"; };
-		C290B41B298979AF0010ED7C /* RickAndMortyTex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyTex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C290B41B298979AF0010ED7C /* Rick&Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick&Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C290B41E298979AF0010ED7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C290B420298979AF0010ED7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C290B427298979AF0010ED7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 		C290B41C298979AF0010ED7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C290B41B298979AF0010ED7C /* RickAndMortyTex.app */,
+				C290B41B298979AF0010ED7C /* Rick&Morty.app */,
 				C290B431298979AF0010ED7C /* RickAndMortyTexTests.xctest */,
 			);
 			name = Products;
@@ -654,7 +654,7 @@
 				C2A8AC96298AE6EA0068028C /* Kingfisher */,
 			);
 			productName = RickAndMortyTex;
-			productReference = C290B41B298979AF0010ED7C /* RickAndMortyTex.app */;
+			productReference = C290B41B298979AF0010ED7C /* Rick&Morty.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C290B430298979AF0010ED7C /* RickAndMortyTexTests */ = {
@@ -998,7 +998,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruralnerd.com.RickAndMortyTex;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Rick&Morty";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1029,7 +1029,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruralnerd.com.RickAndMortyTex;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Rick&Morty";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
