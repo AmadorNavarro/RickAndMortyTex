@@ -69,7 +69,7 @@ extension CharacterView { final class Ui {
         
         superview.configure(statusKey) {
             
-            $0.text = "Status:".localized
+            $0.text = "character_view_status".localized
             $0.font = .headline3
             $0.textColor = .n70
             
@@ -91,7 +91,7 @@ extension CharacterView { final class Ui {
         
         superview.configure(speciesKey) {
             
-            $0.text = "Species:".localized
+            $0.text = "character_view_species".localized
             $0.font = .headline3
             $0.textColor = .n70
             
@@ -113,7 +113,7 @@ extension CharacterView { final class Ui {
         
         superview.configure(genderKey) {
             
-            $0.text = "Gender:".localized
+            $0.text = "character_view_gender".localized
             $0.font = .headline3
             $0.textColor = .n70
             
@@ -135,7 +135,7 @@ extension CharacterView { final class Ui {
         
         superview.configure(createdKey) {
             
-            $0.text = "Created at:".localized
+            $0.text = "character_view_created".localized
             $0.font = .headline3
             $0.textColor = .n70
             

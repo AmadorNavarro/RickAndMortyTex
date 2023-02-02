@@ -22,7 +22,7 @@ final class CharacterListView: UIViewController, BindableView {
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Rick and Morty"
+        title = "Common_nav_bar_title".localized
         navigationItem.backButtonTitle = ""
     }
 

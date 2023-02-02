@@ -5,14 +5,11 @@ final class CharacterView: UIViewController, BindableView {
     
     // MARK: Private members
     private(set) lazy var ui = { Ui(self.view) }()
-    private let output: CharacterInput
     
     // MARK: Initializer
-    init(input: CharacterModel, output: CharacterInput) {
-        self.output = output
+    init(input: CharacterModel) {
         super.init(nibName: nil, bundle: nil)
         bindInput(input)
-        bindOutput(output)
     }
     
     required init?(coder: NSCoder) {
@@ -20,7 +17,7 @@ final class CharacterView: UIViewController, BindableView {
     }
     
     override func viewDidLoad() {
-        title = "Rick and Morty"
+        title = "Common_nav_bar_title".localized
     }
     
     // MARK: Public interface
@@ -29,10 +26,6 @@ final class CharacterView: UIViewController, BindableView {
         sink(input.$character) { [weak self] character in
             self?.configure(character)
         }
-        
-    }
-    
-    func bindOutput(_ output: CharacterInput) {
         
     }
     

@@ -11,9 +11,7 @@
 		C27E48EC298BD90B009CBD53 /* XCTestCase+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E48EB298BD90B009CBD53 /* XCTestCase+Additions.swift */; };
 		C27E48EE298BDF82009CBD53 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E48ED298BDF82009CBD53 /* Helpers.swift */; };
 		C27E48F1298BE858009CBD53 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E48F0298BE858009CBD53 /* NavigationView.swift */; };
-		C27E48F9298C046C009CBD53 /* CharacterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E48F3298C046C009CBD53 /* CharacterInput.swift */; };
 		C27E48FA298C046C009CBD53 /* CharacterView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E48F4298C046C009CBD53 /* CharacterView+Factory.swift */; };
-		C27E48FB298C046C009CBD53 /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E48F5298C046C009CBD53 /* CharacterController.swift */; };
 		C27E48FC298C046C009CBD53 /* CharacterView+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E48F6298C046C009CBD53 /* CharacterView+UI.swift */; };
 		C27E48FD298C046C009CBD53 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E48F7298C046C009CBD53 /* CharacterView.swift */; };
 		C27E48FE298C046C009CBD53 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E48F8298C046C009CBD53 /* CharacterModel.swift */; };
@@ -21,6 +19,10 @@
 		C27E4903298C0987009CBD53 /* IAppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E4902298C0987009CBD53 /* IAppNavigator.swift */; };
 		C27E4905298C0B19009CBD53 /* UIApplication+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E4904298C0B19009CBD53 /* UIApplication+Additions.swift */; };
 		C27E4907298C14FF009CBD53 /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E4906298C14FF009CBD53 /* Date+Additions.swift */; };
+		C27E490E298C1D0B009CBD53 /* CharacterControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E4909298C1D0B009CBD53 /* CharacterControllerTests.swift */; };
+		C27E490F298C1D0B009CBD53 /* CharacterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E490A298C1D0B009CBD53 /* CharacterViewTests.swift */; };
+		C27E4910298C1D0B009CBD53 /* MockCharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E490B298C1D0B009CBD53 /* MockCharacterController.swift */; };
+		C27E4912298C1D0B009CBD53 /* CharacterView+UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E490D298C1D0B009CBD53 /* CharacterView+UITests.swift */; };
 		C290B41F298979AF0010ED7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B41E298979AF0010ED7C /* AppDelegate.swift */; };
 		C290B421298979AF0010ED7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B420298979AF0010ED7C /* SceneDelegate.swift */; };
 		C290B428298979AF0010ED7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C290B427298979AF0010ED7C /* Assets.xcassets */; };
@@ -104,9 +106,7 @@
 		C27E48EB298BD90B009CBD53 /* XCTestCase+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Additions.swift"; sourceTree = "<group>"; };
 		C27E48ED298BDF82009CBD53 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		C27E48F0298BE858009CBD53 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
-		C27E48F3298C046C009CBD53 /* CharacterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInput.swift; sourceTree = "<group>"; };
 		C27E48F4298C046C009CBD53 /* CharacterView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterView+Factory.swift"; sourceTree = "<group>"; };
-		C27E48F5298C046C009CBD53 /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
 		C27E48F6298C046C009CBD53 /* CharacterView+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterView+UI.swift"; sourceTree = "<group>"; };
 		C27E48F7298C046C009CBD53 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		C27E48F8298C046C009CBD53 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
@@ -114,6 +114,11 @@
 		C27E4902298C0987009CBD53 /* IAppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAppNavigator.swift; sourceTree = "<group>"; };
 		C27E4904298C0B19009CBD53 /* UIApplication+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Additions.swift"; sourceTree = "<group>"; };
 		C27E4906298C14FF009CBD53 /* Date+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
+		C27E4909298C1D0B009CBD53 /* CharacterControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterControllerTests.swift; sourceTree = "<group>"; };
+		C27E490A298C1D0B009CBD53 /* CharacterViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewTests.swift; sourceTree = "<group>"; };
+		C27E490B298C1D0B009CBD53 /* MockCharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharacterController.swift; sourceTree = "<group>"; };
+		C27E490D298C1D0B009CBD53 /* CharacterView+UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterView+UITests.swift"; sourceTree = "<group>"; };
+		C27E4913298C1E9F009CBD53 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C290B41B298979AF0010ED7C /* RickAndMortyTex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyTex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C290B41E298979AF0010ED7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C290B420298979AF0010ED7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -214,9 +219,7 @@
 		C27E48F2298C0449009CBD53 /* CharacterView */ = {
 			isa = PBXGroup;
 			children = (
-				C27E48F3298C046C009CBD53 /* CharacterInput.swift */,
 				C27E48F8298C046C009CBD53 /* CharacterModel.swift */,
-				C27E48F5298C046C009CBD53 /* CharacterController.swift */,
 				C27E48F7298C046C009CBD53 /* CharacterView.swift */,
 				C27E48F6298C046C009CBD53 /* CharacterView+UI.swift */,
 				C27E48F4298C046C009CBD53 /* CharacterView+Factory.swift */,
@@ -231,6 +234,17 @@
 				C27E4902298C0987009CBD53 /* IAppNavigator.swift */,
 			);
 			path = AppNavigator;
+			sourceTree = "<group>";
+		};
+		C27E4908298C1CF8009CBD53 /* CharacterView */ = {
+			isa = PBXGroup;
+			children = (
+				C27E4909298C1D0B009CBD53 /* CharacterControllerTests.swift */,
+				C27E490A298C1D0B009CBD53 /* CharacterViewTests.swift */,
+				C27E490D298C1D0B009CBD53 /* CharacterView+UITests.swift */,
+				C27E490B298C1D0B009CBD53 /* MockCharacterController.swift */,
+			);
+			path = CharacterView;
 			sourceTree = "<group>";
 		};
 		C290B412298979AF0010ED7C = {
@@ -582,6 +596,7 @@
 		C2A8ACBF298BAC770068028C /* App */ = {
 			isa = PBXGroup;
 			children = (
+				C27E4908298C1CF8009CBD53 /* CharacterView */,
 				C2A8ACC0298BAC900068028C /* CharacterList */,
 			);
 			path = App;
@@ -686,6 +701,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = C290B412298979AF0010ED7C;
 			packageReferences = (
@@ -758,7 +774,6 @@
 				C2A8AC8D298AE3E20068028C /* UIFont+Additions.swift in Sources */,
 				C2A8AC5C298ACEA00068028C /* ILoadCharactersUseCase.swift in Sources */,
 				C2A8ACC6298BACBB0068028C /* CharacterCell.swift in Sources */,
-				C27E48F9298C046C009CBD53 /* CharacterInput.swift in Sources */,
 				C290B489298AB3BF0010ED7C /* IRequestFactory.swift in Sources */,
 				C290B46729898EAF0010ED7C /* DependencyInjection.swift in Sources */,
 				C27E48F1298BE858009CBD53 /* NavigationView.swift in Sources */,
@@ -771,7 +786,6 @@
 				C290B46F298996A70010ED7C /* IURLSession.swift in Sources */,
 				C2A8ACC7298BACBB0068028C /* CharacterCell+Ui.swift in Sources */,
 				C2A8ACB5298B0F270068028C /* UIButton+Additions.swift in Sources */,
-				C27E48FB298C046C009CBD53 /* CharacterController.swift in Sources */,
 				C290B421298979AF0010ED7C /* SceneDelegate.swift in Sources */,
 				C2A8AC79298ADB3B0068028C /* CharacterListModel.swift in Sources */,
 				C2A8AC9B298AEA110068028C /* UIImageView+Additions.swift in Sources */,
@@ -801,11 +815,15 @@
 				C2A8ACD4298BC2EE0068028C /* CharacterListViewTests.swift in Sources */,
 				C2A8ACD5298BC2EE0068028C /* MockCharacterListController.swift in Sources */,
 				C2A8ACCB298BACE20068028C /* CharacterCell+UiTests.swift in Sources */,
+				C27E4912298C1D0B009CBD53 /* CharacterView+UITests.swift in Sources */,
+				C27E490F298C1D0B009CBD53 /* CharacterViewTests.swift in Sources */,
 				C2A8AC59298AC57D0068028C /* MockRequestFactory.swift in Sources */,
 				C2A8ACD7298BC2EE0068028C /* CharacterListView+UITests.swift in Sources */,
 				C2A8AC6B298AD6350068028C /* FileLoader.swift in Sources */,
 				C27E48EE298BDF82009CBD53 /* Helpers.swift in Sources */,
+				C27E4910298C1D0B009CBD53 /* MockCharacterController.swift in Sources */,
 				C2A8ACD3298BC2EE0068028C /* CharacterListControllerTests.swift in Sources */,
+				C27E490E298C1D0B009CBD53 /* CharacterControllerTests.swift in Sources */,
 				C2A8ACD9298BCAB80068028C /* MockLoadCharactersUseCase.swift in Sources */,
 				C2A8AC57298AC4A70068028C /* CharactersRepositoryTests.swift in Sources */,
 				C2A8AC63298AD0E00068028C /* LoadCharactersUseCaseTests.swift in Sources */,
@@ -835,6 +853,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C2A8ACAE298B0B1B0068028C /* en */,
+				C27E4913298C1E9F009CBD53 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -846,6 +865,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -906,6 +926,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
