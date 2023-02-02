@@ -1,0 +1,29 @@
+appId: com.ruralnerd.com.RickAndMortyTex
+---
+
+# preconditions
+- launchApp
+
+# Step 1
+- assertVisible:
+    id: "character_list"
+
+# Step 2
+- repeat:
+    while:
+      notVisible: "Arcade Alien"
+    commands:
+      - swipe:
+          direction: UP
+
+# Step 3
+- tapOn: "Arcade Alien"
+
+# Step 4
+- assertVisible:
+    id: "character_detail"
+
+- assertVisible: "Arcade Alien"
+
+# Teardown
+- stopApp

@@ -35,9 +35,13 @@ extension CharacterView { final class Ui {
         superview.backgroundColor = .white
         
         superview.configure(background) {
+            
             $0.contentMode = .scaleAspectFill
             $0.alpha = 0.2
+            $0.accessibilityId(.characterDetail)
+            
             $1.edges.equalToSuperview()
+            
         }
         
         superview.configure(imageView) {

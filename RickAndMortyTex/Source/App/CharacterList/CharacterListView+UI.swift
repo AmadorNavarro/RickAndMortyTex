@@ -30,9 +30,13 @@ extension CharacterListView { final class Ui {
         
         // Collection view
         superview.configure(collectionView) {
+            
             $0.backgroundColor = .clear
+            $0.accessibilityId(.characterList)
             $0.register(CharacterCell.self, forCellWithReuseIdentifier: cellIdentifier)
+            
             $1.edges.equalToSuperview()
+            
         }
         
         // Error view
