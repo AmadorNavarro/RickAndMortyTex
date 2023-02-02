@@ -1,0 +1,56 @@
+default_platform(:ios)
+
+platform :ios do
+
+  api_key = app_store_connect_api_key(
+    key_id: ENV["APPCONNECT_KEY_ID"],
+    issuer_id: ENV["APPCONNECT_ISSUER_ID"],
+    key_content: ENV["APPCONNECT_KEY_CONTENT"]
+  )
+
+  before_all do
+    # prepare ci if needed
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    run_tests(scheme: "RickAndMortyText")
+  end
+
+  desc "Rick&Morty-app qa enviroment"
+  lane :distribute do
+    
+    sync_code_signing(app_identifier: "com.ruralnerd.com.RickAndMortyTex")
+
+    version = get_version_number()
+
+    update_info_plist(
+      plist_path: "./SupportingFiles/Info.plist",
+      display_name: "Rick&Morty"
+    )
+
+    match(type: "appstore", app_identifier: "com.ruralnerd.com.RickAndMortyTex")
+    gym(export_method: "app-store", scheme: "RickAndMortyText", include_bitcode: false)
+    upload_symbols_to_bugsnag
+
+    sh "git log --format=oneline -n 1 $CIRCLE_SHA1 | cut -d ' ' -f2- > release.txt"
+    sh "git branch --show-current > notes.txt"
+
+    pilot(
+      api_key: api_key,
+      app_identifier: "RickAndMortyText",
+      skip_submission: true,
+      skip_waiting_for_build_processing: true,
+      changelog: File.read("notes.txt"),
+      wait_processing_timeout_duration: 1800
+    )
+
+    slack(
+      message: "App successfully released! - Version: " + version + " Build: " + get_build_number + "",
+      channel: ENV["SLACK_DEV_IOS_TEST_CHANNEL"],
+      success: true
+    )
+
+  end
+
+end
