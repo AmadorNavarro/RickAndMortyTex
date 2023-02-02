@@ -149,6 +149,24 @@ final class HttpRequestTests: XCTestCase {
         
     }
     
+    func test_connect_withoutNetworkConexion_shouldReturnNoNetworkError() async {
+        
+        let sut = HttpRequest(urlTest)
+        sut.urlSession = MockURLSession(nil, statusCode: 500)
+        sut.networkConexion = false
+        let expectation = expectation(description: "expect no network error")
+        
+        do {
+            let _ = try await sut.connect()
+        } catch {
+            XCTAssertEqual(error as! HttpError, .noNetworkError)
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 1)
+        
+    }
+    
     func test_connect_withWrongResponse_shouldReturnUnknownNetworkError() async {
         
         let sut = HttpRequest(urlTest)
