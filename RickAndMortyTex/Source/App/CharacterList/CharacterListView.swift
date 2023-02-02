@@ -22,13 +22,10 @@ final class CharacterListView: UIViewController, BindableView {
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Rick and Morty"
+        title = "Common_nav_bar_title".localized
+        navigationItem.backButtonTitle = ""
     }
 
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//        .lightContent
-//    }
-    
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         ui.collectionView.dataSource = self
@@ -116,5 +113,10 @@ extension CharacterListView: UICollectionViewDataSource {
 }
 
 extension CharacterListView: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let character = characters[indexPath.item]
+        output.onCharacterSelected(character)
+    }
     
 }

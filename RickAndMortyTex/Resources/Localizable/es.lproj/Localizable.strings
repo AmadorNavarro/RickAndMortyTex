@@ -1,0 +1,22 @@
+// Common keys
+"Common_nav_bar_title" = "Rick y Morty";
+"common_loading" = "Cargando...";
+"common_action_try_again" = "Intentar de nuevo";
+"common_title_something_wrong" = "Algo ha ido mal...";
+"common_error_no_internet" = "No hay conexión a internet";
+
+// Character view
+"character_view_status" = "Estado:";
+"character_view_species" = "Especie:";
+"character_view_gender" = "Género:";
+"character_view_created" = "Creado el:";
+
+// Status
+"Alive" = "Vivo";
+"Dead" = "Muerto";
+"unknown" = "desconocido";
+
+// Gender
+"Female" = "Mujer";
+"Male" = "Hombre";
+"Genderless" = "Sin género";
