@@ -1,4 +1,5 @@
 import Foundation
+import Network
 
 final class HttpRequest: IHttpRequest {
     
@@ -13,6 +14,8 @@ final class HttpRequest: IHttpRequest {
     private var method: Method = .get
     private var headers: [String : String] = [:]
     private var body: Data?
+    private let monitor = NWPathMonitor()
+    private var networkConexion = false
     private var printCurl = UserDefaults.standard.bool(forKey: "printCurl")
     private var printResponse = UserDefaults.standard.bool(forKey: "printLog")
     var urlSession: IURLSession = URLSession.shared
@@ -20,10 +23,11 @@ final class HttpRequest: IHttpRequest {
     // MARK: - Initializers
     init(_ path: String) {
         self.url = path
+        configureNetworkMonitor()
     }
     
-    init(_ path: String, parameters: [String : String]?) {
-        self.url = "\(path)\(HttpRequest.getQuery(parameters))"
+    convenience init(_ path: String, parameters: [String : String]?) {
+        self.init("\(path)\(HttpRequest.getQuery(parameters))")
     }
     
     // MARK: - Public methods
@@ -52,6 +56,11 @@ final class HttpRequest: IHttpRequest {
         guard let url = URL(string: url) else {
             throw HttpError.invalidUrl
         }
+        
+        // 
+        guard networkConexion else {
+            throw HttpError.noNetworkError
+        }
 
         // Return the prepared request
         return try await prepareRequest(url)
@@ -59,6 +68,16 @@ final class HttpRequest: IHttpRequest {
     }
     
     // MARK: - Private methods
+    private func configureNetworkMonitor() {
+        
+        monitor.pathUpdateHandler = { [weak self] path in
+            self?.networkConexion = path.status == .satisfied
+        }
+        
+        monitor.start(queue: DispatchQueue.main)
+        
+    }
+    
     private class func getQuery(_ parameters: [String : String]?) -> String {
         
         guard let parameters = parameters, !parameters.isEmpty else { return "" }

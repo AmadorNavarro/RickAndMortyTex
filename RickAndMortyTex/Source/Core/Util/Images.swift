@@ -1,8 +1,9 @@
 import UIKit
 
-enum RAMImage: String {
+enum Image: String {
     
     case spinner
+    case empty
     
     var image: UIImage {
         return image(color: nil)

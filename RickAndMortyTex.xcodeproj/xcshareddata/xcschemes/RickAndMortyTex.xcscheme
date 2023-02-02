@@ -78,7 +78,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-printLog"
+            argument = "-printLog true"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

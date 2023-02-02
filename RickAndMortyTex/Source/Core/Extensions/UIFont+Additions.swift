@@ -6,6 +6,9 @@ enum Font: String {
     static let defaultSizeFont = 5
 
     case black = "NotoSans-Black"
+    case semiBold = "NotoSans-SemiBold"
+    case regular = "NotoSans-Regular"
+    case medium = "NotoSans-Medium"
     case schwifty = "get_schwifty"
 
     subscript(dynamicMember size: String) -> UIFont {
@@ -19,5 +22,9 @@ extension UIFont {
     
     @nonobjc class var rickAndMorty: UIFont { Font.schwifty.32 }
     @nonobjc class var headline1: UIFont { Font.black.24 }
+    @nonobjc class var headline2: UIFont { Font.black.16 }
+    @nonobjc class var body1: UIFont { Font.regular.14 }
+    @nonobjc class var subtitle1: UIFont { Font.semiBold.14 }
+    @nonobjc class var buttonText1: UIFont { Font.medium.12 }
     
 }

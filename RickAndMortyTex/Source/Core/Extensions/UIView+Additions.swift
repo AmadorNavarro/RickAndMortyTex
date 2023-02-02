@@ -15,4 +15,14 @@ extension UIView {
         
     }
     
+    func accessibilityId(_ id: Accessibility) {
+        accessibilityIdentifier = id.rawValue
+    }
+    
+    func onTap(overwriteExisting: Bool = true, _ callback: @escaping () -> Void) {
+        let gestureRecognizer = BindableGestureRecognizer(action: callback, overwriteExisting: overwriteExisting)
+        addGestureRecognizer(gestureRecognizer)
+        isUserInteractionEnabled = true
+    }
+    
 }

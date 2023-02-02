@@ -1,3 +1,5 @@
 protocol CharacterListInput {
     
+    func onLoadNextPage()
+    
 }
