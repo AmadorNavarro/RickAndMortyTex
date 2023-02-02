@@ -9,7 +9,7 @@ enum Font: String {
     case semiBold = "NotoSans-SemiBold"
     case regular = "NotoSans-Regular"
     case medium = "NotoSans-Medium"
-    case schwifty = "get_schwifty"
+    case schwifty = "Get Schwifty"
 
     subscript(dynamicMember size: String) -> UIFont {
         let size = CGFloat(Int(size) ?? Font.defaultSizeFont)

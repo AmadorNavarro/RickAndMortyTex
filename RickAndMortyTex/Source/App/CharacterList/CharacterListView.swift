@@ -20,6 +20,15 @@ final class CharacterListView: UIViewController, BindableView {
     }
     
     // MARK: Life cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Rick and Morty"
+    }
+
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        .lightContent
+//    }
+    
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         ui.collectionView.dataSource = self
