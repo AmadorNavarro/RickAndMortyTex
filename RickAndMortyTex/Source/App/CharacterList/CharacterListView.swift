@@ -24,18 +24,20 @@ final class CharacterListView: UIViewController, BindableView {
         super.viewWillAppear(animated)
         ui.collectionView.dataSource = self
         ui.collectionView.delegate = self
-        output.onLoadNextPage()
+        Task { await output.onLoadNextPage() }
     }
     
     // MARK: Public interface
     func bindInput(_ input: CharacterListModel) {
         
         sink(input.$error, input.$currentPage) { [weak self] (error, page) in
+            
             if error != nil && page == 0 {
                 self?.ui.errorView.showError()
             } else {
                 self?.ui.errorView.isHidden = true
             }
+            
         }
         
         sink(input.$characters) { [weak self] characters in
@@ -58,7 +60,7 @@ final class CharacterListView: UIViewController, BindableView {
     func bindOutput(_ output: CharacterListInput) {
         
         ui.errorView.tryAgaingAction {
-            output.onLoadNextPage()
+            Task { await output.onLoadNextPage() }
         }
         
     }
@@ -76,7 +78,7 @@ extension CharacterListView: UIScrollViewDelegate {
             .last
         
         if let index = index, index + 5 > characters.count {
-            output.onLoadNextPage()
+            Task { await output.onLoadNextPage() }
         }
         
     }

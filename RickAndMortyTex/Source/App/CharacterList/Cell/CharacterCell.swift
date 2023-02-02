@@ -10,7 +10,7 @@ final class CharacterCell: UICollectionViewCell {
     override func prepareForReuse() {
         ui.imageView.image = nil
         ui.nameLabel.text = nil
-        ui.spinner.startAnimating()
+        ui.spinner.startSpinning()
     }
     
     // MARK: Public methods

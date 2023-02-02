@@ -25,7 +25,7 @@ extension CharacterCell { final class Ui {
             
             $0.backgroundColor = .n30
             $0.layer.cornerRadius = 8
-            $0.layer.shadowOffset = CGSize(width: 0, height: 0)
+            $0.layer.shadowOffset = .zero
             $0.layer.shadowColor = UIColor.black.cgColor
             $0.layer.shadowOpacity = 0.2
             $0.layer.shadowRadius = 8

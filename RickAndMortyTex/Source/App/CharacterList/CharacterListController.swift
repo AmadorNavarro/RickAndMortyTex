@@ -2,7 +2,6 @@ final class CharacterListController {
     
     // MARK: Dependencies
     private let useCase: ILoadCharactersUseCase
-//    private let navigator: IAppNavigator
     
     // MARK: Private members
     private let model: CharacterListModel
@@ -12,7 +11,6 @@ final class CharacterListController {
     init(model: CharacterListModel, _ useCase: ILoadCharactersUseCase) {
         self.model = model
         self.useCase = useCase
-//        self.navigator = navigator
     }
     
     // MARK: Private methods
@@ -41,8 +39,8 @@ final class CharacterListController {
 
 extension CharacterListController: CharacterListInput {
     
-    func onLoadNextPage() {
-        Task { await loadNextPage() }
+    func onLoadNextPage() async {
+        await loadNextPage()
     }
     
 }

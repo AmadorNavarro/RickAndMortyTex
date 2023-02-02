@@ -1,5 +1,5 @@
 protocol CharacterListInput {
     
-    func onLoadNextPage()
+    func onLoadNextPage() async
     
 }

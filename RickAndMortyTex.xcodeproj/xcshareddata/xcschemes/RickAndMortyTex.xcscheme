@@ -29,24 +29,12 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C290B430298979AF0010ED7C"
                BuildableName = "RickAndMortyTexTests.xctest"
                BlueprintName = "RickAndMortyTexTests"
-               ReferencedContainer = "container:RickAndMortyTex.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C290B43A298979B00010ED7C"
-               BuildableName = "RickAndMortyTexUITests.xctest"
-               BlueprintName = "RickAndMortyTexUITests"
                ReferencedContainer = "container:RickAndMortyTex.xcodeproj">
             </BuildableReference>
          </TestableReference>

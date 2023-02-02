@@ -15,10 +15,10 @@ final class HttpRequest: IHttpRequest {
     private var headers: [String : String] = [:]
     private var body: Data?
     private let monitor = NWPathMonitor()
-    private var networkConexion = false
     private var printCurl = UserDefaults.standard.bool(forKey: "printCurl")
     private var printResponse = UserDefaults.standard.bool(forKey: "printLog")
     var urlSession: IURLSession = URLSession.shared
+    var networkConexion = true
     
     // MARK: - Initializers
     init(_ path: String) {
@@ -28,6 +28,10 @@ final class HttpRequest: IHttpRequest {
     
     convenience init(_ path: String, parameters: [String : String]?) {
         self.init("\(path)\(HttpRequest.getQuery(parameters))")
+    }
+    
+    deinit {
+        monitor.cancel()
     }
     
     // MARK: - Public methods
