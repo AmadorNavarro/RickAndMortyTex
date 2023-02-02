@@ -5,6 +5,7 @@ final class CharacterListControllerTests: XCTestCase {
 
     var model: CharacterListModel!
     var useCase: MockLoadCharactersUseCase!
+    var appNavigator: MockAppNavigatior!
     var sut: CharacterListController!
 
     override func setUp() {
@@ -12,7 +13,8 @@ final class CharacterListControllerTests: XCTestCase {
         super.setUp()
         model = CharacterListModel()
         useCase = MockLoadCharactersUseCase()
-        sut = CharacterListController(model: model, useCase)
+        appNavigator = MockAppNavigatior()
+        sut = CharacterListController(model: model, useCase, appNavigator)
         
     }
 

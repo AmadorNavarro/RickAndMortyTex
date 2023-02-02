@@ -19,10 +19,9 @@
 		C27E4903298C0987009CBD53 /* IAppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E4902298C0987009CBD53 /* IAppNavigator.swift */; };
 		C27E4905298C0B19009CBD53 /* UIApplication+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E4904298C0B19009CBD53 /* UIApplication+Additions.swift */; };
 		C27E4907298C14FF009CBD53 /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E4906298C14FF009CBD53 /* Date+Additions.swift */; };
-		C27E490E298C1D0B009CBD53 /* CharacterControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E4909298C1D0B009CBD53 /* CharacterControllerTests.swift */; };
 		C27E490F298C1D0B009CBD53 /* CharacterViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E490A298C1D0B009CBD53 /* CharacterViewTests.swift */; };
-		C27E4910298C1D0B009CBD53 /* MockCharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E490B298C1D0B009CBD53 /* MockCharacterController.swift */; };
 		C27E4912298C1D0B009CBD53 /* CharacterView+UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E490D298C1D0B009CBD53 /* CharacterView+UITests.swift */; };
+		C27E4915298C2191009CBD53 /* MockAppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E4914298C2191009CBD53 /* MockAppNavigator.swift */; };
 		C290B41F298979AF0010ED7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B41E298979AF0010ED7C /* AppDelegate.swift */; };
 		C290B421298979AF0010ED7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290B420298979AF0010ED7C /* SceneDelegate.swift */; };
 		C290B428298979AF0010ED7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C290B427298979AF0010ED7C /* Assets.xcassets */; };
@@ -114,11 +113,10 @@
 		C27E4902298C0987009CBD53 /* IAppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAppNavigator.swift; sourceTree = "<group>"; };
 		C27E4904298C0B19009CBD53 /* UIApplication+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Additions.swift"; sourceTree = "<group>"; };
 		C27E4906298C14FF009CBD53 /* Date+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
-		C27E4909298C1D0B009CBD53 /* CharacterControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterControllerTests.swift; sourceTree = "<group>"; };
 		C27E490A298C1D0B009CBD53 /* CharacterViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewTests.swift; sourceTree = "<group>"; };
-		C27E490B298C1D0B009CBD53 /* MockCharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharacterController.swift; sourceTree = "<group>"; };
 		C27E490D298C1D0B009CBD53 /* CharacterView+UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterView+UITests.swift"; sourceTree = "<group>"; };
 		C27E4913298C1E9F009CBD53 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C27E4914298C2191009CBD53 /* MockAppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppNavigator.swift; sourceTree = "<group>"; };
 		C290B41B298979AF0010ED7C /* RickAndMortyTex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyTex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C290B41E298979AF0010ED7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C290B420298979AF0010ED7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -239,10 +237,8 @@
 		C27E4908298C1CF8009CBD53 /* CharacterView */ = {
 			isa = PBXGroup;
 			children = (
-				C27E4909298C1D0B009CBD53 /* CharacterControllerTests.swift */,
 				C27E490A298C1D0B009CBD53 /* CharacterViewTests.swift */,
 				C27E490D298C1D0B009CBD53 /* CharacterView+UITests.swift */,
-				C27E490B298C1D0B009CBD53 /* MockCharacterController.swift */,
 			);
 			path = CharacterView;
 			sourceTree = "<group>";
@@ -391,6 +387,7 @@
 				C2A8ACD8298BCAB80068028C /* MockLoadCharactersUseCase.swift */,
 				C2A8AC58298AC57D0068028C /* MockRequestFactory.swift */,
 				C290B471298A83400010ED7C /* MockURLSession.swift */,
+				C27E4914298C2191009CBD53 /* MockAppNavigator.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -811,6 +808,7 @@
 				C2A8AC65298AD12C0068028C /* MockCharactersRepository.swift in Sources */,
 				C27E48EC298BD90B009CBD53 /* XCTestCase+Additions.swift in Sources */,
 				C2A8ACCA298BACE20068028C /* CharacterCellTests.swift in Sources */,
+				C27E4915298C2191009CBD53 /* MockAppNavigator.swift in Sources */,
 				C290B46D298995FA0010ED7C /* HttpRequestTests.swift in Sources */,
 				C2A8ACD4298BC2EE0068028C /* CharacterListViewTests.swift in Sources */,
 				C2A8ACD5298BC2EE0068028C /* MockCharacterListController.swift in Sources */,
@@ -821,9 +819,7 @@
 				C2A8ACD7298BC2EE0068028C /* CharacterListView+UITests.swift in Sources */,
 				C2A8AC6B298AD6350068028C /* FileLoader.swift in Sources */,
 				C27E48EE298BDF82009CBD53 /* Helpers.swift in Sources */,
-				C27E4910298C1D0B009CBD53 /* MockCharacterController.swift in Sources */,
 				C2A8ACD3298BC2EE0068028C /* CharacterListControllerTests.swift in Sources */,
-				C27E490E298C1D0B009CBD53 /* CharacterControllerTests.swift in Sources */,
 				C2A8ACD9298BCAB80068028C /* MockLoadCharactersUseCase.swift in Sources */,
 				C2A8AC57298AC4A70068028C /* CharactersRepositoryTests.swift in Sources */,
 				C2A8AC63298AD0E00068028C /* LoadCharactersUseCaseTests.swift in Sources */,
